@@ -32,7 +32,7 @@
     "build": "tsup",
     "build-fast": "tsup --no-dts",
     "dev": "pnpm build-fast --watch",
-    "fmt": "prettier --write packages"
+    "fmt": "prettier --write ."
   },
   "dependencies": {
     "prettier": "^2.8.8",

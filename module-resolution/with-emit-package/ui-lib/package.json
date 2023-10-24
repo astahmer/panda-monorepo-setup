@@ -29,7 +29,7 @@
     "build": "tsup --entry src/index.ts --entry src/preset.ts --format=esm,cjs --external styled-system --dts",
     "build-fast": "tsup --entry src/index.ts --entry src/preset.ts --format=esm,cjs --external styled-system --no-dts",
     "dev": "pnpm build-fast --watch",
-    "fmt": "prettier --write packages"
+    "fmt": "prettier --write ."
   },
   "dependencies": {
     "prettier": "^2.8.8",

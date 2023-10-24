@@ -1,4 +1,4 @@
 packages:
-  - "module-resolution/**"
-  - "shipping/**"
-  - "kitchen-sink"
+  - 'module-resolution/**'
+  - 'shipping/**'
+  - 'kitchen-sink'

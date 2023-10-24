@@ -20,7 +20,7 @@
     "build": "tsup src/preset.ts --format=esm,cjs --dts",
     "build-fast": "tsup src/preset.ts --format=esm,cjs --no-dts",
     "dev": "pnpm build-fast --watch",
-    "fmt": "prettier --write packages"
+    "fmt": "prettier --write ."
   },
   "dependencies": {
     "prettier": "^2.8.8",
