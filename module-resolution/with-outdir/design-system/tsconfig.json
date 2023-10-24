@@ -20,11 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     //
-    "baseUrl": ".",
-    "paths": {
-      "#ui-lib/*": ["./styled-system/*"]
-    }
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["src", "styled-system"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "styled-system"]
 }
