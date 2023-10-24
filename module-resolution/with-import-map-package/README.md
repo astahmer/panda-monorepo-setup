@@ -1,6 +1,6 @@
 # module-resolution
 
-## with-import-map
+## with-import-map-package
 
 ### Description
 
@@ -34,24 +34,23 @@ in your `app`.**
 ### Usage
 
 ```ts
-outdir: 'styled-system',
+outdir: '../generated',
 importMap: {
-    css: '#ui-lib/css',
-    recipes: '#ui-lib/recipes',
-    patterns: '#ui-lib/patterns',
-    jsx: '#ui-lib/jsx',
+    css: '@acme/ui-lib/css',
+    recipes: '@acme/ui-lib/recipes',
+    patterns: '@acme/ui-lib/patterns',
+    jsx: '@acme/ui-lib/jsx',
 },
 ```
 
-This will still generate the `styled-system` folder locally (in `ui-lib/styled-system`), as this option is independant
-from the `config.outdir`.
+This will generate the `outdir` folder in your monorepo in the same level as any other workspace packages.
 
 You are essentially telling Panda where to import the `outdir` entrypoints from, giving you freedom to generate the
 `outdir` anywhere you want. This is a powerful option that gives you full control on the package entrypoints, by letting
 you create your own `package.json` file for the `outdir` folder.
 
-In this example, the `#ui-lib` is resolved at runtime using the ESM native
-[`package.json`.`imports`](https://nodejs.org/api/packages.html#imports) and type-wise using `tsconfig` path aliases.
+In this example, the `@acme/ui-lib` is resolved at runtime using a package.json dependency, just like any other package.
 
-> There are other ways to achieve the same result, such as installing the package directly as a dependency of your app,
-> rather than using `package.json`.`imports`
+> There are other ways to achieve the same result, such as using the ESM native
+> [`package.json`.`imports`](https://nodejs.org/api/packages.html#imports) for the runtime and using `tsconfig` path
+> aliases for type suggestions.
