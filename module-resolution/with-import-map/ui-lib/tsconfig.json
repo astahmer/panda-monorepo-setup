@@ -21,7 +21,12 @@
     "noFallthroughCasesInSwitch": true,
     //
     "allowSyntheticDefaultImports": true,
-    "allowJs": true
+    "allowJs": true,
+    //
+    "baseUrl": ".",
+    "paths": {
+      "#ui-lib/*": ["./styled-system/*"]
+    }
   },
   "include": ["src", "styled-system"]
 }

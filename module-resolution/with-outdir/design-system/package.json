@@ -17,8 +17,8 @@
   },
   "scripts": {
     "prepare": "pnpm panda codegen",
-    "build": "tsup --entry src/preset.ts --format=esm,cjs --dts",
-    "build-fast": "tsup --entry src/preset.ts --format=esm,cjs --no-dts",
+    "build": "tsup src/preset.ts --format=esm,cjs --dts",
+    "build-fast": "tsup src/preset.ts --format=esm,cjs --no-dts",
     "dev": "pnpm build-fast --watch",
     "fmt": "prettier --write packages"
   },

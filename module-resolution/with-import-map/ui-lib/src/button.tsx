@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react'
-import { button, type ButtonVariantProps } from '../styled-system/recipes/button'
+import { button, type ButtonVariantProps } from '#ui-lib/recipes/button'
 
 export interface ButtonProps extends ButtonVariantProps, PropsWithChildren {}
 

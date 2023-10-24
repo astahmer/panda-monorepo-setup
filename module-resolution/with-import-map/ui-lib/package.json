@@ -4,6 +4,9 @@
   "private": true,
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
+  "imports": {
+    "#ui-lib/*": "./styled-system/*"
+  },
   "exports": {
     ".": {
       "source": "./src/index.ts",
@@ -26,8 +29,8 @@
   },
   "scripts": {
     "prepare": "pnpm panda codegen",
-    "build": "tsup --entry src/index.ts --entry src/preset.ts --format=esm,cjs --dts",
-    "build-fast": "tsup --entry src/index.ts --entry src/preset.ts --format=esm,cjs --no-dts",
+    "build": "tsup",
+    "build-fast": "tsup --no-dts",
     "dev": "pnpm build-fast --watch",
     "fmt": "prettier --write packages"
   },
