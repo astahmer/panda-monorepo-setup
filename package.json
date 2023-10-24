@@ -1,0 +1,16 @@
+{
+  "name": "panda-monorepo-setup",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm -r --filter=./packages/** dev",
+    "build": "pnpm -r --filter=./packages/** build",
+    "fmt": "prettier --write packages"
+  },
+  "dependencies": {
+    "prettier": "^2.8.8",
+    "tsup": "7.1.0",
+    "typescript": "5.2.2"
+  },
+  "packageManager": "pnpm@8.6.4"
+}

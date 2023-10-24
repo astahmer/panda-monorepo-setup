@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noEmit": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "esnext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noImplicitReturns": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true
+  },
+  "include": ["module-resolution", "real-world", "shipping"],
+  "types": ["vitest/globals"],
+  "exclude": ["**/node_modules/**", "node_modules"]
+}
