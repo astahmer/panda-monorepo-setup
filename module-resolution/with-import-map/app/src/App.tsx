@@ -1,14 +1,14 @@
 import './App.css'
-import { css, cx } from 'styled-system/css'
-import { Stack } from 'styled-system/jsx'
-import { button } from 'styled-system/recipes'
-import { Button } from 'panda-monorepo-setup-with-emit-package-ui-lib'
+import { css, cx } from '#ui-lib/css'
+import { Stack } from '#ui-lib/jsx'
+import { button } from '#ui-lib/recipes'
+import { Button } from 'panda-monorepo-setup-with-import-map-ui-lib'
 
 function App() {
   return (
     <>
       <h1 className={css({ fontSize: '4xl', lineHeight: '1.1' })}>Hello from Panda 🐼</h1>
-      <h2 className={css({ fontSize: '2xl', my: 4, color: 'yellow.400' })}>module-resolution/with-emit-package</h2>
+      <h2 className={css({ fontSize: '2xl', my: 4, color: 'yellow.400' })}>module-resolution/with-import-map</h2>
       <Stack>
         <Button visual="funky" shape="square" size="lg">
           Button component from ui-lib
