@@ -40,4 +40,5 @@ This will generate the `styled-system` in your `node_modules`, as if you had ins
 By generating the `outdir` in your `node_modules` we're essentially tricking the NodeJS module resolution to prevent the
 `outdir` runtime code to be imported twice in your app
 
-There are other ways to achieve the same result, such as using `config.importMap`.
+> There are other ways to achieve the same result, such as using `config.importMap`, you can see what it looks like in
+> the [`with-import-map`](../with-import-map/README.md) example
