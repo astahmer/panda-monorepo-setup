@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@acme/ui-lib": "workspace:^",
-    "panda-monorepo-setup-with-build-info-ui-lib": "workspace:^",
+    "panda-mono-with-build-info-ui-lib": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

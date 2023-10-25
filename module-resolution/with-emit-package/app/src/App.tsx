@@ -2,7 +2,7 @@ import './App.css'
 import { css, cx } from 'styled-system/css'
 import { Stack } from 'styled-system/jsx'
 import { button } from 'styled-system/recipes'
-import { Button } from 'panda-monorepo-setup-with-emit-package-ui-lib'
+import { Button } from 'panda-mono-with-emit-package-ui-lib'
 
 function App() {
   return (

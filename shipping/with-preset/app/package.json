@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "panda-monorepo-setup-with-outdir-design-system": "workspace:^",
+    "panda-mono-with-outdir-design-system": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

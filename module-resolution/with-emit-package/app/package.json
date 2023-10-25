@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "panda-monorepo-setup-with-emit-package-ui-lib": "workspace:^",
+    "panda-mono-with-emit-package-ui-lib": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

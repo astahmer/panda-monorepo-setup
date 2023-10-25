@@ -1,15 +1,12 @@
 import { defineConfig } from '@pandacss/dev'
 
 export default defineConfig({
-  presets: ['@pandacss/dev/presets', 'panda-monorepo-setup-with-src-files-ui-lib/preset'],
+  presets: ['@pandacss/dev/presets', 'panda-mono-with-src-files-ui-lib/preset'],
   // Whether to use css reset
   preflight: true,
 
   // Where to look for your css declarations
-  include: [
-    './src/**/*.{js,jsx,ts,tsx}',
-    './node_modules/panda-monorepo-setup-with-src-files-ui-lib/src/**/*.{js,jsx,ts,tsx}',
-  ],
+  include: ['./src/**/*.{js,jsx,ts,tsx}', './node_modules/panda-mono-with-src-files-ui-lib/src/**/*.{js,jsx,ts,tsx}'],
 
   // Files to exclude
   exclude: [],

@@ -1,5 +1,5 @@
 {
-  "name": "panda-monorepo-setup-with-outdir-design-system",
+  "name": "panda-mono-with-outdir-design-system",
   "version": "0.0.1",
   "private": true,
   "types": "./dist/preset.d.ts",

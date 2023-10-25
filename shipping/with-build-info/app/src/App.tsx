@@ -2,7 +2,7 @@ import './App.css'
 import { css, cx } from '@acme/ui-lib/css'
 import { Stack } from '@acme/ui-lib/jsx'
 import { button } from '@acme/ui-lib/recipes'
-import { Button } from 'panda-monorepo-setup-with-build-info-ui-lib'
+import { Button } from 'panda-mono-with-build-info-ui-lib'
 
 function App() {
   return (

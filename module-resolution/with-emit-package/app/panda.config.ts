@@ -1,7 +1,7 @@
 import { defineConfig } from '@pandacss/dev'
 
 export default defineConfig({
-  presets: ['@pandacss/dev/presets', 'panda-monorepo-setup-with-emit-package-ui-lib/preset'],
+  presets: ['@pandacss/dev/presets', 'panda-mono-with-emit-package-ui-lib/preset'],
   // Whether to use css reset
   preflight: true,
 

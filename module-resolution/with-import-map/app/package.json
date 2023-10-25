@@ -13,7 +13,7 @@
     "#ui-lib/*": "./styled-system/*"
   },
   "dependencies": {
-    "panda-monorepo-setup-with-import-map-ui-lib": "workspace:^",
+    "panda-mono-with-import-map-ui-lib": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

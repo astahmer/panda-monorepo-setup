@@ -1,8 +1,8 @@
 import './App.css'
 import { cx } from '@acme/ui-lib/cx'
 import { button } from '@acme/ui-lib/recipes'
-import { Button } from 'panda-monorepo-setup-with-static-css-ui-lib'
-import 'panda-monorepo-setup-with-static-css-ui-lib/lib.css'
+import { Button } from 'panda-mono-with-static-css-ui-lib'
+import 'panda-mono-with-static-css-ui-lib/lib.css'
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import { defineConfig } from '@pandacss/dev'
 
 export default defineConfig({
-  presets: ['@pandacss/dev/presets', 'panda-monorepo-setup-with-outdir-design-system'],
+  presets: ['@pandacss/dev/presets', 'panda-mono-with-outdir-design-system'],
   // Whether to use css reset
   preflight: true,
 
