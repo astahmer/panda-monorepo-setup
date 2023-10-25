@@ -1,6 +1,6 @@
 # module-resolution
 
-## with-outdir
+## with-preset
 
 ### Description
 
