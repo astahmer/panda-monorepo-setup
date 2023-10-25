@@ -1,0 +1,58 @@
+{
+  "name": "panda-monorepo-setup-with-static-css-ui-lib",
+  "version": "0.0.1",
+  "private": true,
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "source": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": "./dist/index.js"
+    },
+    "./preset": {
+      "source": "./src/preset.ts",
+      "types": "./dist/preset.d.ts",
+      "import": {
+        "types": "./dist/preset.d.mts",
+        "default": "./dist/preset.mjs"
+      },
+      "require": "./dist/preset.js"
+    },
+    "./lib.css": "./dist/lib.css"
+  },
+  "scripts": {
+    "prepare": "pnpm panda codegen",
+    "build": "tsup",
+    "cssgen": "pnpm panda cssgen -o dist/lib.css",
+    "release": "pnpm panda prepare && pnpm build && pnpm cssgen && pnpm publish",
+    "build-fast": "tsup --no-dts",
+    "dev": "pnpm build-fast --watch",
+    "fmt": "prettier --write ."
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@acme/ui-lib": "workspace:^",
+    "prettier": "^2.8.8",
+    "tsup": "7.1.0",
+    "typescript": "5.2.2"
+  },
+  "packageManager": "pnpm@8.6.4",
+  "devDependencies": {
+    "@pandacss/dev": "^0.17.0",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

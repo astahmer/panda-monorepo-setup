@@ -4,8 +4,7 @@
 
 ### Description
 
-This example shows how to use the [`panda ship`](https://panda-css.com/docs/guides/component-library) command to easily
-ship your library styles without having to expose your library source code.
+This example shows how to use the to easily ship your library specific styles
 
 ### Problem
 
@@ -34,3 +33,5 @@ export default defineConfig({
 
 > If you can't publish your source files, you might want to look at the
 > [`with-build-info`](../with-build-info/README.md) example using `panda ship` to solve that problem.
+
+> If your consumers aren't Panda users, you might want to look at the [`with-static-css`](../with-static-css/README.md)

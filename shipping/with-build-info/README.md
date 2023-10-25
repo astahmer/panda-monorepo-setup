@@ -72,3 +72,5 @@ export default defineConfig({
 
 > If publishing the source files is fine for you, then you don't need `panda ship` and you can see how to ship your
 > library styles without it in the the [`with-src-files`](../with-src-files/README.md) example
+
+> If your consumers aren't Panda users, you might want to look at the [`with-static-css`](../with-static-css/README.md)
