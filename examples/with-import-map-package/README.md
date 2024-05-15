@@ -36,12 +36,12 @@ in your `app`.**
 ```ts
 outdir: '../generated',
 // Equivalent to:
-// `importMap: "@acme/ui-lib"`
+// `importMap: "@import-map-package/styled-system"`
 importMap: {
-    css: '@acme/ui-lib/css',
-    recipes: '@acme/ui-lib/recipes',
-    patterns: '@acme/ui-lib/patterns',
-    jsx: '@acme/ui-lib/jsx',
+    css: '@import-map-package/styled-system/css',
+    recipes: '@import-map-package/styled-system/recipes',
+    patterns: '@import-map-package/styled-system/patterns',
+    jsx: '@import-map-package/styled-system/jsx',
 },
 ```
 
@@ -51,7 +51,8 @@ You are essentially telling Panda where to import the `outdir` entrypoints from,
 `outdir` anywhere you want. This is a powerful option that gives you full control on the package entrypoints, by letting
 you create your own `package.json` file for the `outdir` folder.
 
-In this example, the `@acme/ui-lib` is resolved at runtime using a package.json dependency, just like any other package.
+In this example, the `@import-map-package/styled-system` is resolved at runtime using a package.json dependency, just
+like any other package.
 
 > There are other ways to achieve the same result, such as using the ESM native
 > [`package.json`.`imports`](https://nodejs.org/api/packages.html#imports) for the runtime and using `tsconfig` path

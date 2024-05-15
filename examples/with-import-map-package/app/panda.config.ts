@@ -1,7 +1,7 @@
 import { defineConfig } from '@pandacss/dev'
 
 export default defineConfig({
-  presets: ['@pandacss/dev/presets', 'panda-mono-with-import-map-package-ui-lib/preset'],
+  presets: ['@pandacss/dev/presets', '@import-map-package/ui-lib/preset'],
   // Whether to use css reset
   preflight: true,
 
@@ -18,11 +18,13 @@ export default defineConfig({
   jsxFramework: 'react',
 
   // The output directory for your css system
-  outdir: '../generated',
-  importMap: {
-    css: '@acme/ui-lib/css',
-    recipes: '@acme/ui-lib/recipes',
-    patterns: '@acme/ui-lib/patterns',
-    jsx: '@acme/ui-lib/jsx',
-  },
+  outdir: '../generated/dist',
+  importMap: '@import-map-package/styled-system',
+  // Equivalent to:
+  // importMap: {
+  //   css: '@acme/ui-lib/css',
+  //   recipes: '@acme/ui-lib/recipes',
+  //   patterns: '@acme/ui-lib/patterns',
+  //   jsx: '@acme/ui-lib/jsx',
+  // },
 })

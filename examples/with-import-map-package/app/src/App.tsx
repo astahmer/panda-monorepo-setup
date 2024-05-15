@@ -1,8 +1,8 @@
 import './App.css'
-import { css, cx } from '@acme/ui-lib/css'
-import { Stack } from '@acme/ui-lib/jsx'
-import { button } from '@acme/ui-lib/recipes'
-import { Button } from 'panda-mono-with-import-map-package-ui-lib'
+import { css, cx } from '@import-map-package/styled-system/css'
+import { Stack } from '@import-map-package/styled-system/jsx'
+import { button } from '@import-map-package/styled-system/recipes'
+import { Button } from '@import-map-package/ui-lib'
 
 function App() {
   return (

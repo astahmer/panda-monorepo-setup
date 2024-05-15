@@ -10,13 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@acme/ui-lib": "workspace:^",
-    "panda-mono-with-import-map-package-ui-lib": "workspace:^",
+    "@import-map-package/styled-system": "workspace:^",
+    "@import-map-package/ui-lib": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@pandacss/dev": "^0.17.0",
+    "@pandacss/dev": "^0.39.1",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",

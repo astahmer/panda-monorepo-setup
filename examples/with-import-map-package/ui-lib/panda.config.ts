@@ -20,13 +20,15 @@ export default defineConfig({
   },
 
   // The output directory for your css system
-  outdir: '../generated',
-  importMap: {
-    css: '@acme/ui-lib/css',
-    recipes: '@acme/ui-lib/recipes',
-    patterns: '@acme/ui-lib/patterns',
-    jsx: '@acme/ui-lib/jsx',
-  },
+  outdir: '../generated/dist',
+  importMap: '@import-map-package/styled-system',
+  // Equivalent to:
+  // importMap: {
+  //   css: '@import-map-package/styled-system/css',
+  //   recipes: '@import-map-package/styled-system/recipes',
+  //   patterns: '@import-map-package/styled-system/patterns',
+  //   jsx: '@import-map-package/styled-system/jsx',
+  // },
   // The JSX framework to use
   jsxFramework: 'react',
 

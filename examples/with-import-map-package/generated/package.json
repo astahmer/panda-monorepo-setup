@@ -1,34 +1,34 @@
 {
-  "name": "@acme/ui-lib",
+  "name": "@import-map-package/styled-system",
   "type": "module",
   "exports": {
     "./css": {
-      "types": "./css/index.d.ts",
-      "require": "./css/index.mjs",
-      "import": "./css/index.mjs"
+      "types": "./dist/css/index.d.ts",
+      "require": "./dist/css/index.mjs",
+      "import": "./dist/css/index.mjs"
     },
     "./jsx": {
-      "types": "./jsx/index.d.ts",
-      "require": "./jsx/index.mjs",
-      "import": "./jsx/index.mjs"
+      "types": "./dist/jsx/index.d.ts",
+      "require": "./dist/jsx/index.mjs",
+      "import": "./dist/jsx/index.mjs"
     },
     "./patterns": {
-      "types": "./patterns/index.d.ts",
-      "require": "./patterns/index.mjs",
-      "import": "./patterns/index.mjs"
+      "types": "./dist/patterns/index.d.ts",
+      "require": "./dist/patterns/index.mjs",
+      "import": "./dist/patterns/index.mjs"
     },
     "./recipes": {
-      "types": "./recipes/index.d.ts",
-      "require": "./recipes/index.mjs",
-      "import": "./recipes/index.mjs"
+      "types": "./dist/recipes/index.d.ts",
+      "require": "./dist/recipes/index.mjs",
+      "import": "./dist/recipes/index.mjs"
     },
     "./tokens": {
-      "types": "./tokens/index.d.ts",
-      "require": "./tokens/index.mjs",
-      "import": "./tokens/index.mjs"
+      "types": "./dist/tokens/index.d.ts",
+      "require": "./dist/tokens/index.mjs",
+      "import": "./dist/tokens/index.mjs"
     },
     "./types": {
-      "types": "./types/index.d.ts"
+      "types": "./dist/types/index.d.ts"
     },
     "./styles.css": "./styles.css"
   }
