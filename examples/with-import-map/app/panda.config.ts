@@ -1,7 +1,7 @@
 import { defineConfig } from '@pandacss/dev'
 
 export default defineConfig({
-  presets: ['@pandacss/dev/presets', 'panda-mono-with-outdir-design-system'],
+  presets: ['@pandacss/dev/presets', 'panda-mono-with-import-map-ui-lib/preset'],
   // Whether to use css reset
   preflight: true,
 
@@ -19,5 +19,13 @@ export default defineConfig({
 
   // The output directory for your css system
   outdir: 'styled-system',
-  emitPackage: true,
+
+  // Shorthand equivalent:
+  // importMap: "#ui-lib"
+  importMap: {
+    css: '#ui-lib/css',
+    recipes: '#ui-lib/recipes',
+    patterns: '#ui-lib/patterns',
+    jsx: '#ui-lib/jsx',
+  },
 })

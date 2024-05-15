@@ -35,6 +35,8 @@ in your `app`.**
 
 ```ts
 outdir: '../generated',
+// Equivalent to:
+// `importMap: "@acme/ui-lib"`
 importMap: {
     css: '@acme/ui-lib/css',
     recipes: '@acme/ui-lib/recipes',

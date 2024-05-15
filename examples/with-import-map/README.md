@@ -35,6 +35,8 @@ in your `app`.**
 
 ```ts
 outdir: 'styled-system',
+// Equivalent to:
+// `importMap: "#ui-lib"`
 importMap: {
     css: '#ui-lib/css',
     recipes: '#ui-lib/recipes',
@@ -55,5 +57,4 @@ In this example, the `#ui-lib` is resolved at runtime using the ESM native
 
 > There are other ways to achieve the same result, such as installing the package directly as a dependency of your app,
 > rather than using `package.json`.`imports`, you can see what it looks like in the
-> [`with-import-map-package`](../with-import-map-package/README.md) example Or you can also use the `config.emitPackage`
-> option, see the [`with-emit-package`](../with-emit-package/README.md) example
+> [`with-import-map-package`](../with-import-map-package/README.md) example

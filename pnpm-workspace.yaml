@@ -1,4 +1,2 @@
 packages:
-  - 'module-resolution/**'
-  - 'shipping/**'
-  - 'kitchen-sink'
+  - "examples/**"
